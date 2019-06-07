@@ -16,5 +16,11 @@ const matrix = [
 
 //now i want to draw this first piece
 matrix.forEach((row, y) => {
-    
-}
+    row.forEach((value, x) => {
+        //we're going to make all the zero values transparent and fill in the rest
+        if (value !== 0) {
+            context.fillStyle = "red";
+            context.fillRect(x, y, 1, 1);
+        }
+    });
+});
