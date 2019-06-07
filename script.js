@@ -1,7 +1,8 @@
 const canvas = document.querySelector('#tetris');
-
 //we need to get the context out because we can't draw on the dom element
 const context = canvas.getContext('2d');
+//we want to scale up the screen so we can actually see
+context.scale(20, 20)
 
 //to make sure this works, we're going to paint the canvas
 context.fillStyle = "#000";
